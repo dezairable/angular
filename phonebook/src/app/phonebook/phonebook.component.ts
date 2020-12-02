@@ -36,7 +36,6 @@ export class PhonebookComponent implements OnInit {
 
   // sortPersons() {
   //   var sorted = this.persons
-  //   sorted.sort
   // }
 
   clearFields() {
