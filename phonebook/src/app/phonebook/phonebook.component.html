@@ -1,0 +1,18 @@
+<div class="phonebook">
+    <form class="add-form">
+        <div class="fields">
+            <input type="text" 
+                placeholder="Name" 
+                class="input"
+                [(ngModel)]="test">
+        </div>
+        <div class="add-btn">
+            <button class="btn" (click)="insertValue()">ADD</button>
+        </div>
+    </form>
+
+    <div class="contact-list">
+        <!-- <span>{{person.name}}</span> -->
+        <span>{{txt}}</span>
+    </div>
+</div>
