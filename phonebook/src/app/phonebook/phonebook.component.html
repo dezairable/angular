@@ -1,18 +1,29 @@
 <div class="phonebook">
-    <form class="add-form">
+    <div class="add-form">
+        <h3 class="title">PhoneBook</h3>
         <div class="fields">
             <input type="text" 
-                placeholder="Name" 
+                placeholder="First Name" 
                 class="input"
-                [(ngModel)]="test">
+                [(ngModel)]="newFirstname">
+            <input type="text" 
+                placeholder="Last Name" 
+                class="input"
+                [(ngModel)]="newLastname">
+            <input type="text" 
+                placeholder="Number" 
+                class="input"
+                [(ngModel)]="newNum">
         </div>
         <div class="add-btn">
-            <button class="btn" (click)="insertValue()">ADD</button>
+            <button class="btn" (click)="insertValue()">ADD TO CONTACTS</button>
         </div>
-    </form>
+    </div>
 
-    <div class="contact-list">
-        <!-- <span>{{person.name}}</span> -->
-        <span>{{txt}}</span>
+    <div class="contact-list" *ngFor="let person of persons orderBy">
+        <div class="item">
+            <p class="names">{{person.firstname }} {{person.lastname}}</p>
+            <p class="number">{{person.number}}</p>
+        </div>
     </div>
 </div>

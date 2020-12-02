@@ -7,39 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhonebookComponent implements OnInit {
 
-  newName : string
+  newFirstname : string = 'Coder'
+  newLastname : string = 'Byte'
+  newNum : number = 123
 
-  test : string
-  txt : string = '';
 
   constructor() { }
 
-  
 
   ngOnInit(): void {
   }
 
   persons : any [] = [
-    {
-      name : ''
-    }
+    
   ]
 
-  displayValue() {
-    return {
-      name : this.newName
-    }
-  }
 
   insertValue() {
-    // for(var i=0; i < this.persons.length; i++) {
-    //   if (this.persons[i].name == this.displayValue().name) {
-    //     console.log("already exists");
-    //   }
-    //   this.persons[i].push("aaa")
-    // }
-    this.txt = this.test;
-    console.log(this.txt);
+    this.persons.push(
+      {
+        firstname : this.newFirstname,
+        lastname : this.newLastname,
+        number : this.newNum
+      }
+    )
+    this.clearFields();
+  }
+
+  // sortPersons() {
+  //   var sorted = this.persons
+  //   sorted.sort
+  // }
+
+  clearFields() {
+    this.newFirstname = '';
+    this.newLastname = '';
+    this.newNum = null;
   }
 
 

@@ -1,21 +1,34 @@
-// .phonebook {
-    
-//     .add-form {
-//         width: 50%;
-//         margin: 0 auto;
-//         border: 1px solid red;
-//         .fields {
-//             margin: auto;
-//             .input {
-//                 padding: 5px 10px;
-//                 margin: 10px;
-//             }
+.phonebook {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .add-form {
+        margin: 0 auto;
+        .title {
+            text-align: center;
+        }
+        .fields {
+            text-align: center;
+            display: block;
+            .input {
+                padding: 5px 10px;
+                margin: 10px;
+            }
             
-//         }
-//         .add-btn {
-//             .btn {
-//                 padding: 10px;
-//             }
-//         }
-//     }
-// }
+        }
+        .add-btn {
+            text-align: center;
+            .btn {
+                padding: 8px 15px;
+                background: #3db453;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+
+    .contact-list {
+        padding: 10px 30px;
+        .item {
+            margin-bottom: 13px;
+        }
+    }
+}

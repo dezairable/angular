@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { FormsModule } from '@angular/forms';
+
+
 import { PhonebookComponent } from './phonebook/phonebook.component';
 
 @NgModule({
@@ -12,7 +16,8 @@ import { PhonebookComponent } from './phonebook/phonebook.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
